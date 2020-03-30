@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Athiti|Chela+One&display=swap');
+
+/*============RESET============*/
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;	
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-family: 'Chela One', cursive;
+	font-size: 40px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+h3 {
+	font-family: 'Acme', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: -5px;
+}
+
+.mg-info{
+	margin-right: 20px;
+	margin-left: 0px;
+}
+.sobre,
+.portifolio,
+.servicos,
+.contatos { 
+	padding-top: 85px;
+}
+
+
+/*============HEADER============*/
+.cabecalho{
+	width: 1040px;
+	height: 80px;
+	margin: 0 100px;
+	position: fixed;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.logo-site {
+	width: 210px;
+	height: 40px;
+	line-height: 20px;
+	padding: 20px 0;
+	float: left;
+	padding-left: 20px;
+}
+
+.menu {
+	float: right;
+	width: 520px;
+	height: 40px;
+}
+nav ul, 
+nav li {
+	padding: 0;
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	padding: 10px 0;
+	line-height: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+nav  li a{
+	text-decoration: none;
+	font-family: 'Acme', sans-serif;
+	color: #000; 
+	font-size: 18px;
+}
+nav a:hover{
+	color: #0837DE;
+	transition: all ease-in .5s;
+	border-bottom: 2px solid #0837DE;
+	padding-bottom: 4px;
+}
+
+/*============BANNER============*/
+.banner {
+	height: 320px;
+	padding-bottom: 120px;
+	padding-top: 120px;
+}
+.banner-info{
+	float: left;
+	width: 400px;
+}
+.banner-info > h1 {
+	font-family: 'Acme', sans-serif;
+	font-size: 36px;
+	font-style: italic;
+	padding-bottom: 70px;
+}
+.banner-info > p {
+	font-size: 12px;
+	font-family: 'Athiti', sans-serif;
+}
+.banner-info > a {
+	width: 215px;
+	height: 40px;
+	border: 1px solid #0837DE;
+	border-radius: 100px;
+	padding: 3px 60px;
+	font-family: 'Chela One', cursive;
+	text-decoration: none;
+	text-align: center;
+	margin-left:  50px;
+	transition: all ease 2s;
+}
+.btn-sobre:hover{
+	background-color: #0837DE;
+	color: #fff;
+	transition: all ease 2s;
+}
+.btn-sobre:visited{
+	color: #0837DE;
+}
+.image-banner {
+	float: right;
+	width: 400px;
+	margin-right: 80px;
+}
+
+/*============SOBRE============*/
+.sobre  p {
+	width: 960px;
+	max-width: 750px;
+	margin: 0 auto;
+	font-family: 'Acme', sans-serif;
+	font-size: 20px;
+	text-align: center;	
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+.sobre span {
+	color: #0837DE;
+}
+.sobre h3 {
+	padding-top: 60px;
+	text-align: center;
+	font-family: 'Chela One', cursive;
+	font-size: 20px;
+}
+.sobre .stack{
+	font-size: 18px;
+	color: #0837DE;
+	font-family: 'Acme', sans-serif;
+	padding-bottom: 120px;
+}
+
+
+/*============PORTIFOLIO============*/
+.portifolio {
+	height: 2400px;
+}
+.portifolio-item {
+	display: block;
+	width: 960px;
+	height: 240px;
+	padding-bottom: 100px;
+}
+.portifolio-img{
+	float: left;
+	margin-right: 70px;
+	width: 400px;
+	height: 240px;
+}
+.portifolio-info {
+	float: left;
+	width: 470px;
+	height: 240px;
+}
+
+.portifolio-info p {
+	font-family: 'Athiti', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	padding-bottom: 30px;
+}
+.skils {
+	font-family: 'Athiti', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #0837DE;
+	font-weight: bold;
+}
+
+.btn-portifolio-item {
+	width: 215px;
+	height: 40px;	
+	border: 1px solid #0837DE;
+	color: #0837DE;
+	border-radius: 100px;
+	padding: 3px 60px;
+	font-family: 'Chela One', cursive;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 130px;
+	transition: all ease 2s;
+}
+
+.btn-portifolio-item:hover{
+	background-color: #0837DE;
+	color: #fff;
+	transition: all ease 2s;
+}
+
+
+/*============SERVIÇOS============*/
+.servicos{
+	height: 1200px;
+}
+.row {
+	max-width: 960px;
+	margin: 0 40px;
+}
+
+.item-servico {
+	width: 270px;
+	margin-right: 20px;
+	float: left;
+	margin-bottom: 100px;
+}
+.item-servico img {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 30px;
+}
+
+.item-servico p {
+	text-align: center;
+	font-family: 'Athiti', sans-serif;
+	font-style: italic;
+	font-size: 14px;
+}
+
+/*============CONTATOS============*/
+.contatos {
+	padding-bottom: 50px;
+}
+.container-contato {
+	width: 550px;
+	height: 520px;
+}
+.contatos  p {
+	text-align: center;
+	font-family: 'Athiti', sans-serif;
+	font-size: 16px;
+	margin-top: -60px;
+}
+
+.contato {
+	width: 370px;
+	height: 170px;
+	margin: 0 auto;
+	padding-top: 40px;
+	margin-bottom: 80px;
+}
+.email,
+.tel {
+	height: 64px;
+	margin-bottom: 40px;
+	margin: 0 auto;
+	margin-left: 40px;
+}
+
+.email img, .tel img {
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin-right:  20px;
+}
+
+.email span, .tel span {
+	font-size: 16px;
+	line-height: 60px;
+	font-family: 'Athiti', sans-serif;
+	font-weight: bold;
+}
+
+.redes-sociais {
+	width: 520px;
+	height: 80px;
+	margin: 0 auto;
+	margin-left: 60px;
+}
+.redes-sociais img {
+	width: 64px;
+	height: 64px;
+	margin-right: 60px;
+}
+.redes-sociais img:hover
+{
+	opacity: .6;
+}
+
+
+/*============FOOTER============*/
+.footer {
+	height: 200px;
+	margin: 0 auto;
+
+}
+.footer img {
+	margin-top: 100px;
+	margin-left: 530px;
+}
+.footer p {
+	text-align: center;
+}
+.footer  a {
+	text-decoration: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.menumobile {
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+	float: right;
+}
+.mmobile {
+	height: 5px;
+	margin-bottom: 5px;
+	background-color: #0837DE;
+}
+
+/*============RESPONSIVO============*/
+
+@media only  screen and (max-width: 768px){
+	.container {
+		width: 100%;
+	}
+	/*cabecalho*/
+	.cabecalho {
+		width: 100%;
+		max-width: 768px;
+		margin: 0 60px;
+	}
+
+	.logo-site {
+		padding-left: 0;
+	}
+	.menu {
+		width: 500px;
+	}
+	.banner {
+		max-width: 768px;
+		height: 560px;
+		margin-left: 60px;
+	}
+	/*final cabecalho*/
+
+	/*banner*/
+	.banner-info	  {
+		width: 300px;
+	}
+	.image-banner {
+		width: 236px;
+		margin-right: 0;
+	}
+	.banner-info > h1 {
+		font-size: 35px;
+	}
+	.image-banner > img {
+		width: 340px;
+	}
+	/*final banner*/
+
+	/*portifolio*/
+	.portifolio {
+		max-width: 768px;
+	}
+	.portifolio-item {
+		max-width: 768px;
+	}
+	.portifolio-img {
+		width: 300px;
+		margin-right: 40px;
+		margin-left: 20px;
+	}
+	.portifolio-img img {
+		width: 330px;
+	}
+	.img-right{
+		margin-left: -20px;
+	}
+
+	.portifolio-info {
+		width: 390px;
+	}
+	.portifolio-info h3 {
+		font-size: 20px;
+	}
+	.portifolio-info p {
+		padding-bottom: 0;
+	}
+	.mg-info{
+		padding-left: 10px;
+		margin-right: 0;
+	}
+	/*final portifolio*/
+
+	/*serviços;*/
+	.servicos {
+		max-width: 768px;
+		height: 1060px;
+	}
+	.row {
+		width: 700px;
+		margin-left: 60px;
+	}
+	.item-servico {
+		width: 200px;
+	}
+	.item-servico p {
+		font-size: 12px;
+	}
+	/*final serviços*/
+
+	/*contatos*/
+	.contato {
+		margin-bottom: 50px;
+	}
+	.redes-sociais {
+		margin-left: 160px;
+	}
+	/*final contatos*/
+
+	/*footer*/
+	.footer {
+		height: 160px;
+	}
+	.footer p {
+		margin-left: 40px;
+	}
+	.footer img {
+		margin-left: 300px;
+		margin-top: 40px;
+	}
+	/*final footer*/
+}
+
+@media only screen and  (max-width: 600px){
+	.container {
+		width: 100%;
+	}
+	.cabecalho {
+		width: 100%;
+		margin: 0 0px;
+	}
+	.logo-site{
+		padding-left: 20px;
+	}
+	.menumobile {
+		display: block;
+		position: absolute;
+		top: -13px;
+		right: 70px;
+	}
+	.menu {
+		width: 100%;
+		margin-top: -17px;
+	}
+	nav ul{
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+	}
+	.menu ul {
+		width: 100%;
+		background-color: #fff;
+	}
+	.menu li {
+		display: block;
+		border-bottom: 1px solid #0837DE;
+	}
+
+	.banner {
+		width: 100%;
+		margin-left: 0;
+	}
+	.banner-info {
+		width: 46%;
+		padding-left: 20px;
+	}
+	.banner-info > h1 {
+		font-size: 32px;
+		padding-bottom: 15px;
+	}
+	.image-banner{
+		width: 50%;
+	}
+	.image-banner img {
+		width: 270px;
+	}
+	.sobre {
+		width: 90%;
+		margin-left: 20px;
+	}
+	.sobre p{
+		width: 100%;
+		font-size: 16px;
+	}
+	.portifolio {
+		width: 100%;
+	}
+	.portifolio-item {
+		width: 100%;
+	}
+	.portifolio-img {
+		width: 100%;
+		margin-left: 120px;
+	}
+	.portifolio-img img {
+		width: 400px;
+	}
+	.portifolio-info {
+		width: 95%;
+		padding: 10px;
+	}
+	.portifolio-info p{
+		width: 400px;
+		text-align: center;
+		margin-left: 100px;
+	}
+	.btn-portifolio-item {
+		margin-left: 200px;
+	}
+
+	.img-right {
+		margin-top: -490px;
+	}
+	.info-2{
+		margin-top: 210px;
+	}
+
+	.servicos {
+		width: 100%;
+		height: 3500px;
+	}
+	.row {
+		width: 100%;
+		margin-left: 0;
+	}
+	.item-servico {
+		width: 100%;
+		margin-right: 0;
+	}
+	.item-servico img {
+		margin-left: 30%;
+	}
+	.item-servico p{
+		width: 75%;
+		font-size: 16px;
+		margin-left: 90px;
+	}
+	.contatos {
+		width: 100%;
+	}
+	.redes-sociais {
+		margin-left: 155px;
+	}
+	.redes-sociais img {
+		width: 44px;
+		height: 44px;
+		margin-right: 23px;
+	}
+	.footer {
+		width: 100%;
+	}
+	.footer img {
+		margin-left: 220px;
+	}
+}
+
+@media only screen and ( min-width: 320px) and (max-width: 599px) {
+
+	.container {
+		width: 100%;
+	}
+	/*cabeçalho*/
+	.cabecalho {
+		width: 100%;
+		margin: 0 0px;
+	}
+	.logo-site{
+		width: 150px;
+	}
+	.logo-site img {
+		width: 120px;
+		padding-left: 20px;
+	}
+	.menumobile {
+		display: block;
+		position: absolute;
+		top: -13px;
+		right: 40px;
+	}
+	.menu {
+		width: 100%;
+		margin-top: -17px;
+	}
+	nav ul{
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+	}
+	.menu ul {
+		width: 100%;
+		background-color: #fff;
+	}
+	.menu li {
+		display: block;
+		border-bottom: 1px solid #0837DE;
+	}
+	/*final cabeçalho*/
+
+	/*banner*/
+	.banner {
+		width: 100%;
+		margin-left: 40px;
+	}
+	.banner-info, .image-banner {
+		width: 100%
+	}
+	.banner-info {
+		height: 650px;
+	}
+	.banner-info > h1 {
+		font-size: 2em;
+		padding-bottom: 310px;
+	}
+	.banner-info > p {
+		width: 100%;
+		margin-left:  0px;
+	}
+	.banner-info > a {
+		margin-left: 70px;
+	}
+
+	.image-banner > img {
+		width: 75%;
+	}
+	.image-banner  {
+		position: absolute;
+		margin-top: 150px;
+	}
+	/*final do banner*/
+
+	/*sobre*/
+	.sobre {
+		width: 100%;
+		height: 800px;
+		margin-left: 40px;
+	}
+	.sobre p {
+		width: 93%;
+		font-size: 0.9em;
+		padding: 5px;
+		line-height: 35px;
+	}
+	.stack {
+		width: 90%;
+		font-size: 1.2em;
+		padding: 5px;
+	}
+	/*final sobre*/
+
+	/*portifolio*/
+	.portifolio {
+		width: 100%;
+		height: 3400px;
+		margin-left: 40px;
+	}
+	.portifolio-item {
+		width: 97%;
+		height: 450px;
+		padding-bottom: 0;
+	}
+	.portifolio-img {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.portifolio-img img {
+		width: 97%;
+	}
+	.portifolio-info{
+		width: 95%;
+		margin-top: -50px;
+		margin-bottom: 100px;
+	}
+	.portifolio-info p {
+		width: 309px;
+		font-size: 14px;
+		text-align: center;
+		margin-left: -15px;
+	}
+	.info-2{
+		margin-top: 190px;
+		width: 100%;
+	}
+	.btn-portifolio-item {
+		padding: 3px 45px;
+		margin-left: 60px;
+	}
+	.img-right {
+		margin-top: -520px;
+	}
+
+	/*final portifolio*/
+
+	/*serviços*/
+	.servicos {
+		width: 100%;
+		height: 2700px;
+		margin-left: 40px;
+	}
+
+
+	.row {
+		width: 100%;
+		margin-left: 0;
+	}
+	.item-servico {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+	.item-servico img {
+		width: 180px;
+		height: 180px;
+		margin-left: 40px;
+	}
+
+	.item-servico h3 {
+		margin-left: -40px;
+	}
+	.item-servico p {
+		width: 100%;
+		margin-left: -10px;
+		font-size: 12px;
+	}
+	/*final serviços*/
+
+	/*contatos*/
+	.contatos {
+		width: 100%;
+		height: 450px;
+	}
+	.contatos h2 {
+		margin-left: 40px;
+	}
+	.contatos p {
+		font-size: 15px;
+		width: 100%;
+		margin-left: 30px;
+	}
+	.contato {
+		width: 100%;
+		margin-left: 30px;
+	}
+	.email, .tek {
+		margin-left: 20px;
+	}
+	.redes-sociais {
+		width: 100%;
+		margin-left: 50px;
+	}
+	.redes-sociais img {
+		width: 40px;
+		height: 40px;
+		margin-right: 24px;
+	}
+	/*final contatos*/
+
+	/*footer*/
+	.footer {
+		width: 100%;
+		height: 210px;
+	}
+	.footer img {
+		width: 68%;
+		margin-left: 100px;
+		margin-top: 60px;
+	}
+	.footer p{
+		width: 100%;
+		margin-left: 50px;
+	}
+	/*final footer*/
+
+}
